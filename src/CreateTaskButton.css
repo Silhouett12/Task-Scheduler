@@ -1,0 +1,25 @@
+.ButtonContainer {
+    display: flex;
+    justify-content: right;
+    margin-right: 40px;
+}
+
+.TaskButton {
+    
+    background-color: transparent;
+    border: none;
+    width: 65px;
+    height: 50px;
+    right: 123px;
+    cursor: pointer;
+    transform: rotate(10deg);
+    transition: 1s ease;
+
+}
+.TaskButton:hover {
+    transform: rotate(224deg);
+}
+.TaskButton img {
+    width: 100%;
+    height: 100%;
+}

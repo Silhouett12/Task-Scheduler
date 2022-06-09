@@ -1,0 +1,50 @@
+.TaskItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.TaskCheck {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.TaskCheck img {
+    width: 30px;
+    height: 30px;
+}
+.TaskCheck img:hover {
+    transform: scale(1.4);
+}
+.TaskDelete {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position:absolute;
+    right:40px;
+}
+.TaskDelete img:hover {
+    transform: scale(1.4);
+}
+.TaskDelete img {
+    width: 15px;
+    height: 15px;
+}
+
+.TodoItem-p {
+    font-size: 25px;
+    margin:24px 0 24px 24px;
+    padding: 5px;
+    width:calc(100% - 120px);
+    height: 50px;
+    border: 0.5px solid;
+    line-height: 40px;
+    background-color: lavender;
+    box-shadow: rgba(8, 8, 8, 0.48) 6px 2px 16px 0px, rgba(10, 10, 10, 0.8) -6px -2px 16px 0px;;
+}
+
+.TodoItem-p--completed {
+    text-decoration:line-through;
+}

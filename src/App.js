@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import { TaskCounter } from './TaskCounter';
+import { TaskList } from './TaskList';
+import { TaskSearch } from './TaskSearch';
+import { CreateTaskButton } from './CreateTaskButton';
+import { TaskItem } from './TaskItem';
+
+const tasks = [
+  {text: "1 tarea", completed: true },
+  {text: "2 tarea", completed: false },
+  {text: "3 tarea", completed: false },
+]
+ 
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( <React.Fragment>
+   <TaskCounter/>
+   <TaskSearch />
+   <TaskList>
+     {tasks.map(task => (
+      (<TaskItem 
+        key={task.text} 
+        text={task.text} 
+        completed={task.completed}
+        />)
+     ))}
+   </TaskList>
+   <CreateTaskButton />
+     </React.Fragment>
   );
+  
 }
 
 export default App;
