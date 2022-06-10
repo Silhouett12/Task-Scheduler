@@ -19,8 +19,8 @@
     transform: scale(1.4);
 }
 .TaskDelete {
-    width: 30px;
-    height: 30px;
+    width: 15;
+    height: 15;
     cursor: pointer;
     position:absolute;
     right:40px;
