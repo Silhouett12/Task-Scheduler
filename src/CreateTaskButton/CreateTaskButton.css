@@ -14,7 +14,7 @@
     cursor: pointer;
     transform: rotate(10deg);
     transition: 1s ease;
-
+   
 }
 .TaskButton:hover {
     transform: rotate(224deg);

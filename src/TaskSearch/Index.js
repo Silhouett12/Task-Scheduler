@@ -1,9 +1,10 @@
 import React from 'react'
+import { TaskContext } from '../TaskContext'
 import "./TaskSearch.css"
 
-export const TaskSearch = ({searchValue, setSearchValue}) => {
+export const TaskSearch = () => {
 
-  
+  const {searchValue, setSearchValue} = React.useContext(TaskContext);
 
   const onSearchValueChange = (event) => {
     console.log(event.target.value)
@@ -15,7 +16,7 @@ export const TaskSearch = ({searchValue, setSearchValue}) => {
     <input 
     
       className='TaskSearch' 
-      placeholder="Cebolla"
+      placeholder="Buscar..."
       value={searchValue}
       onChange={onSearchValueChange}
     

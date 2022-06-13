@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Fresca', sans-serif;
-  background: linear-gradient(90deg, rgba(35,43,55,1) 0%, rgba(40,118,128,1) 35%, rgba(160,232,229,1) 100%);
+  background: #F9E79F;
 }
 #root{
   max-width: 1000px;

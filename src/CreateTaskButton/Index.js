@@ -4,8 +4,9 @@ import plus from "./plus.png"
 
 export const CreateTaskButton = (props) => {
 
-  const onClickButton = (msg) => {
-    alert(msg)
+  
+  const onClickButton = () => {
+      props.setModal(prevState => !prevState)
   }
 
 
@@ -14,7 +15,7 @@ export const CreateTaskButton = (props) => {
     <button 
       
       className='TaskButton'
-      onClick={() => onClickButton("holi")}
+      onClick={onClickButton}
     
     
     >

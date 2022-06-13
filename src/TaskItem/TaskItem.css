@@ -1,7 +1,7 @@
 .TaskItem {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     position: relative;
 }
 
@@ -9,6 +9,7 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+    align-self: center;
 }
 
 .TaskCheck img {
@@ -24,6 +25,7 @@
     cursor: pointer;
     position:absolute;
     right:40px;
+    top: 40px
 }
 .TaskDelete img:hover {
     transform: scale(1.4);
@@ -38,7 +40,7 @@
     margin:24px 0 24px 24px;
     padding: 5px;
     width:calc(100% - 120px);
-    height: 50px;
+    height: calc(100% - 120px);
     border: 0.5px solid;
     line-height: 40px;
     background-color: lavender;
