@@ -21,11 +21,11 @@ const onSubmit = (event) => {
 
   return (
     <form onSubmit={onSubmit}>
-        <label>Crea tu nueva tarea :D</label>
+        <label>Create a task :D</label>
         <textarea 
         value={newTaskValue}
         onChange ={onChange}
-        placeholder='Escribe aqui...'/>
+        placeholder='Write a task...'/>
         <div className='TaskForm-buttonContainer'>
             <button 
             type='button'
@@ -33,11 +33,11 @@ const onSubmit = (event) => {
             className='TaskForm-button TaskForm-button-cancel'
             
             >
-                Cancelar
+                Cancel
             </button>
             <button type='submit'
             className='TaskForm-button TaskForm-button-add'>
-                Añadir
+                Add
             </button>
         </div>
     </form>

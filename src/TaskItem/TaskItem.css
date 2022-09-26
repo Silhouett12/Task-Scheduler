@@ -44,7 +44,6 @@
     border: 0.5px solid;
     line-height: 40px;
     background-color: lavender;
-    box-shadow: rgba(8, 8, 8, 0.48) 6px 2px 16px 0px, rgba(10, 10, 10, 0.8) -6px -2px 16px 0px;;
 }
 
 .TodoItem-p--completed {

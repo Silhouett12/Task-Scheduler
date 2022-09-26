@@ -16,7 +16,7 @@ export const TaskSearch = () => {
     <input 
     
       className='TaskSearch' 
-      placeholder="Buscar..."
+      placeholder="Search..."
       value={searchValue}
       onChange={onSearchValueChange}
     

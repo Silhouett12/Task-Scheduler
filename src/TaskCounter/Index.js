@@ -5,6 +5,6 @@ import "./TaskCounter.css";
 export const TaskCounter = () => {
   const {totalTasks, completedTasks} = React.useContext(TaskContext)
   return (
-    <h2 className='taskCounterTitle'> Has completado {completedTasks} de {totalTasks} tareas</h2>
+    <h2 className='taskCounterTitle'> You have done {completedTasks} of {totalTasks} tasks</h2>
   )
 }
